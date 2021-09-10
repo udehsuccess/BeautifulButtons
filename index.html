@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharing Button</title>
+    <script src="https://kit.fontawesome.com/feab549c6a.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    a{
+        padding-bottom: 0..714em !important;
+        padding-top: 0..714em !important;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 36px;
+    }
+
+    body{
+        background: rgb(51, 255, 136);
+        font-family: tahoma;
+        font: 100%/1.5;
+    }
+
+    .social{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .social a {
+        padding: 15px;
+        transition: 700ms;
+        color: #252525;
+        text-align: center;
+        transform: scale(0);
+        opacity: 0;
+        text-decoration: none;
+    }
+
+    .social a:nth-child(4){
+        transition-delay: 85ms;
+    }
+    .social a:nth-child(3){
+        transition-delay: 170ms;
+    }
+    .social a:nth-child(2){
+        transition-delay: 255ms;
+    }
+    .social a:nth-child(1){
+        transition-delay: 340ms;
+    }
+
+    .main{
+        width: 300px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border-radius: 59px;
+        text-align: center;
+        font-weight: bold;
+        overflow: hidden;
+        color: #252525;
+    }
+
+    .main .btn {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 80px;
+        position: absolute;
+        top: 0em;
+        left: 0em;
+        background: #252525;
+        border-radius: 59px;
+        color: #fff;
+        transition: 950ms cubic-bezier(0.89, 0.03, 0.06, 1.5);
+    }
+
+    .main .btn a{
+        transform: scale(1);
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        opacity: 1;
+        padding: 0;
+        margin: auto;
+        color: white;
+        font-size: 20px;
+    }
+
+    .main:hover .social a{
+        transform: scale(1);
+        transition-timing-function: cubic-bezier(1, -0.03, 0, 1.85);
+        opacity: 1;
+    }
+
+    .main:hover .btn{
+        transform: translateX(-500px);
+    }
+</style>
+
+
+
+<body>
+    
+
+    <div class="main">
+        <div class="social">
+            <a href="" class="fa fa-facebook" fa-5x></a>
+            <a href="" class="fa fa-twitter" fa-2x></a>
+            <a href="" class="fa fa-linkedin" fa-2x></a>
+            <a href="" class="fa fa-instagram" fa-2x></a>
+            <div class="btn"><a href="">SHARE NOW</a></div>
+        </div>
+    </div>
+
+</body>
+</html>
